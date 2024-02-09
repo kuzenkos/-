@@ -1,0 +1,15 @@
+h1 {
+    color: rgb(255, 0, 0);
+ }
+ 
+ .speransky {
+    height: 100px;
+    width: 30px !important;
+    display: none;
+
+ }
+
+ .fix {
+    
+    width: 70px;
+ }
