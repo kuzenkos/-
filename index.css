@@ -1,15 +1,260 @@
-h1 {
-    color: rgb(255, 0, 0);
- }
- 
- .speransky {
-    height: 100px;
-    width: 30px !important;
-    display: none;
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
 
- }
 
- .fix {
-    
-    width: 70px;
- }
+@font-face {
+    font-family: "Project_Space";
+    src: url("./fonts/Project_Space.ttf");
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "RockStar";
+    src: url("./fonts/RockStar.ttf");
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+body{
+    background-color: #000;
+}
+
+.header_img{
+    width: 80px;
+    height: 45px;
+    margin: 0 28px 0 0;
+}
+
+.header_nav{
+    font-family: "RockStar";
+    font-size: 16px;
+    width: 839px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header_nav a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.header{
+    width: 100%;
+    background-color: #000;
+    padding: 38px 0 ;
+    box-shadow: 0 15px 50px 5px #191E5F;
+}
+
+.header_content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header_button {
+    font-family: "RockStar";
+    font-size: 19px;
+    padding: 16px 32px; 
+    color: #fff;
+    background-color: #000;
+    border: 1px solid #fff;
+    border-radius: 16px;
+    margin: 0 0 0 67px;
+}
+
+
+
+.section_title{
+    font-family: "Project_Space";
+    color: #fff;
+    font-size: 70px;
+    text-align: center;
+    margin: 311px 0 0 0;
+}
+
+.section_img_div{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 113px 0 0 0;
+}
+
+
+.section_img_blur{
+    position: absolute;
+    z-index: -1;
+    bottom: -120px;
+}
+
+.section_2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 127px;
+}
+
+.section_2_h_div{
+    display: flex;
+    justify-content: center;
+}
+
+.section_2_p_div{
+    display: flex;
+    justify-content: center;
+}
+
+
+.section_2_h{
+    font-family: "Project_Space";
+    font-size: 20px;
+    width: 839px;
+    color: #fff;
+    margin: 0 0 91px 0;
+}
+
+.section_2_p{
+    font-family: "RockStar";
+    font-size: 20px;
+    width: 839px;
+    color: #fff; 
+    line-height: 21px;
+}
+
+.section_3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.section_3_h_div{
+    width: 100%;
+}
+
+.section_3_h{
+    font-family: "Project_Space";
+    color: #fff;
+    font-size: 70px; 
+    width: 839px;
+    margin-top: 95px;
+}
+
+.section_3_img {
+    width: 350px;
+    height: 350px;
+}
+
+.section_img_blur {
+    width: 594px;
+    height: 594px;
+}
+
+.section_img {
+    width: 594px;
+    height: 594px;
+
+}
+
+.card_text{
+    width: 790px;
+}
+
+.card_text_title{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 59px;
+}
+
+.card_text_title h3 {
+    font-family: "Project_Space";
+    color: #fff;
+    font-size: 20px;
+}
+
+.card_text_title p {
+    font-family: "Project_Space";
+    color: #fff;
+    font-size: 24px;
+}
+
+.card_text_pre{
+    font-family: "RockStar";
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 100px;
+}
+
+.card_text_more p{
+    font-family: "RockStar";
+    font-size: 23px;
+    color: #fff;
+    margin-right: 9px;
+}
+
+.card_text_more img{
+    width: 16px;
+    height: 8px;
+} 
+
+.card_text_more{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.card{
+    width: 1272px;
+    padding: 50px;
+    border:3px solid #fff;
+    border-radius: 63px;
+    margin-top: 80px;
+}
+
+.card_1{
+    display: flex;
+    justify-content: space-between;
+}
+
